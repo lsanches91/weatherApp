@@ -1,5 +1,5 @@
-let apiURL = "http://dataservice.accuweather.com/"
-let apiKey = "IoEXYiqp8BrbPwKUC0qDYGMx3oN22z0d"
+let apiURL = "http://dataservice.accuweather.com/";
+let apiKey = "IoEXYiqp8BrbPwKUC0qDYGMx3oN22z0d";
 
 function searchWeather(searchInput) {
   fetch(`${apiURL}locations/v1/cities/search?q=${searchInput}&apikey=${apiKey}`).then(result => {
@@ -175,7 +175,6 @@ function forecastWeather(resultFromServer) {
   fetch(`${apiURL}forecasts/v1/daily/5day/${cityKey}?apikey=${apiKey}&details=true&metric=true`).then(result => {
     return result.json();
   }).then(result => {
-    //console.log(result);
     
     let dailyDate = document.getElementsByClassName("forecastDate"); 
     let dailyIcon = document.getElementsByClassName("forecastIcon");

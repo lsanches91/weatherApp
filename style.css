@@ -6,7 +6,6 @@ body{
 
 h2 {
   font-family: Kenya Coffe, sans-serif;
-  color: rgb(206, 211, 220);
 }
 
 .searchContainer {
@@ -25,7 +24,8 @@ h2 {
   font-family: Kenya Coffe, sans-serif;
   font-size: 16px;
   font-weight: bold;
-  color: rgb(206, 211, 220);
+  color: rgb(48, 52, 63);
+  background-color: rgb(206, 211, 220);
 }
 
 .searchButton {
@@ -36,7 +36,8 @@ h2 {
   font-family: Kenya Coffe, sans-serif;
   font-size: 16px;
   font-weight: bold;
-  color: rgb(206, 211, 220);
+  color: rgb(48, 52, 63);
+  background-color: rgb(206, 211, 220);
 }
 
 #currentDescription {
