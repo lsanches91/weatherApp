@@ -1,4 +1,4 @@
-let apiURL = "http://dataservice.accuweather.com/";
+let apiURL = "https://dataservice.accuweather.com/";
 let apiKey = "IoEXYiqp8BrbPwKUC0qDYGMx3oN22z0d";
 
 function searchWeather(searchInput) {
