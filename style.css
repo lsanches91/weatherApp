@@ -1,0 +1,160 @@
+body{
+  background-image: linear-gradient(135deg, rgb(78, 128, 152),rgb(36, 123, 160));
+  background-size: 1500px 1000px;
+  background-repeat: no-repeat; 
+}
+
+h2 {
+  font-family: Kenya Coffe, sans-serif;
+  color: rgb(206, 211, 220);
+}
+
+.searchContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  height: 25px;
+  background-color: transparent;
+  margin: 10px;
+  padding: 5px;
+  font-family: Kenya Coffe, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(206, 211, 220);
+}
+
+.searchButton {
+  height: 40px;
+  background-color: transparent;
+  padding: 10px;
+  line-height: 10px;
+  font-family: Kenya Coffe, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(206, 211, 220);
+}
+
+#currentDescription {
+  margin: auto;  
+  width: 600px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: auto 1fr auto;
+  border: 4px solid rgb(206, 211, 220);
+  border-radius: 10px;
+}
+
+#mainContainer {
+  width: inherit;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  margin-bottom: 10px;
+}
+
+#dateContainer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#cityName {
+  margin: 10px;
+  text-align: center;
+}
+
+#temperature {
+  margin: 10px;
+  text-align: center;
+}
+
+#weatherIcon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#detailContainer {
+  width: inherit;
+  display: grid;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 10px;
+}
+
+#humidityContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+
+#humidityIcon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#uvContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+
+#uvIcon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#windContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+
+#windIcon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#forecastDescription {
+  margin: auto;  
+  width: 600px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  text-align: center;
+}
+
+.dailyForecasts {
+  border: 4px solid rgb(206, 211, 220);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.forecastIcon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+@font-face {
+  font-family: Kenyan Coffee;
+  src: url('font/kenyan_coffee/kenyan-coffee-rg.ttf')
+       format('truetype');
+}

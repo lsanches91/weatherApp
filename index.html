@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="body">
+    <div class="searchContainer">
+      <input class="searchInput" id="searchInput" type="text" placeholder="City Name">
+      <button class="searchButton" id="searchButton">Search</button>
+    </div>
+    <div id="weatherContainer">
+      <div id="currentDescription">        
+        <div id="dateContainer">
+          <h2 id="date"></h2>
+        </div>
+        <div id="mainContainer">
+          <img id="weatherIcon" src="icons/placeholder.png" alt="Transparent image as placeholder">        
+          <h2 id="cityName"></h2>
+          <h2 id="temperature"></h2>
+        </div>
+        <div id="detailContainer">
+          <div id=humidityContainer>
+            <img id="humidityIcon" src="icons/placeholder.png" alt="Transparent image as placeholder">
+            <h2 id="humidityValue"></h2>
+          </div>
+          <div id="uvContainer">
+            <img id="uvIcon" src="icons/placeholder.png" alt="Transparent image as placeholder">
+            <h2 id="uvValue"></h2>
+          </div>
+          <div id="windContainer">
+            <img id="windIcon" src="icons/placeholder.png" alt="Transparent image as placeholder">
+            <h2 id="windValue"></h2>
+          </div>
+        </div>        
+      </div>
+      <div id="forecastDescription">
+        <div class="dailyForecasts">
+          <h2 class="forecastDate"></h2>
+          <img class="forecastIcon" src="icons/placeholder.png">
+          <h2 class="forecastMaxTemp"></h2>
+          <h2 class="forecastMinTemp"></h2>          
+        </div>
+        <div class="dailyForecasts">
+          <h2 class="forecastDate"></h2>
+          <img class="forecastIcon" src="icons/placeholder.png">
+          <h2 class="forecastMaxTemp"></h2>
+          <h2 class="forecastMinTemp"></h2>          
+        </div>
+        <div class="dailyForecasts">
+          <h2 class="forecastDate"></h2>
+          <img class="forecastIcon" src="icons/placeholder.png">
+          <h2 class="forecastMaxTemp"></h2>
+          <h2 class="forecastMinTemp"></h2>          
+        </div>
+        <div class="dailyForecasts">
+          <h2 class="forecastDate"></h2>
+          <img class="forecastIcon" src="icons/placeholder.png">
+          <h2 class="forecastMaxTemp"></h2>
+          <h2 class="forecastMinTemp"></h2>          
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
