@@ -29,10 +29,10 @@ function currentWeather(resultFromServer){
     let weatherIconSrc = document.getElementById("weatherIcon");
     let temperatureSrc = document.getElementById("temperature")
 
+    changeStyle(icon);
     currentDate();
     getTemperature(temperature, temperatureSrc, unit);
-    getWeatherIcon(weatherIconSrc, icon);
-    changeStyle(icon);
+    getWeatherIcon(weatherIconSrc, icon);    
     getHumidity(humidity);
     getUV(uv);
     getWindSpeed(wind);
@@ -221,8 +221,10 @@ function changeStyle(iconNumber) {
       body.style.backgroundImage = "linear-gradient(135deg, rgb(255, 214, 57) , rgb(252, 247, 248))";
       body.style.color = "rgb(48, 52, 63)";
       currentDescription.style.borderColor = "rgb(48, 52, 63)";
+      currentDescription.style.background = "rgb(48, 52, 63, 0.3)";
       for (let i = 0; i < dailyForecasts.length; i++) {
-        dailyForecasts[i].style.borderColor = "rgb(48, 52, 63)";        
+        dailyForecasts[i].style.borderColor = "rgb(48, 52, 63)";
+        dailyForecasts[i].style.background = "rgb(48, 52, 63, 0.3)";
       }
       break;
     case 3:
@@ -241,8 +243,10 @@ function changeStyle(iconNumber) {
       body.style.backgroundImage = "linear-gradient(135deg, rgb(144, 194, 231) , rgb(252, 247, 248))";
       body.style.color = "rgb(48, 52, 63)";
       currentDescription.style.borderColor = "rgb(48, 52, 63)";
+      currentDescription.style.background = "rgb(48, 52, 63, 0.3)"
       for (let i = 0; i < dailyForecasts.length; i++) {
-        dailyForecasts[i].style.borderColor = "rgb(48, 52, 63)";        
+        dailyForecasts[i].style.borderColor = "rgb(48, 52, 63)";
+        dailyForecasts[i].style.background = "rgb(48, 52, 63, 0.3)";
       }
       break;
     case 12:
@@ -255,8 +259,10 @@ function changeStyle(iconNumber) {
       body.style.backgroundImage = "linear-gradient(135deg, rgb(48, 52, 63) , rgb(39, 52, 105))";
       body.style.color = "rgb(206, 211, 220)";
       currentDescription.style.borderColor = "rgb(206, 211, 220)";
+      currentDescription.style.background = "rgb(206, 211, 220, 0.3)"
       for (let i = 0; i < dailyForecasts.length; i++) {
-        dailyForecasts[i].style.borderColor = "rgb(206, 211, 220)";        
+        dailyForecasts[i].style.borderColor = "rgb(206, 211, 220)";
+        dailyForecasts[i].style.background = "rgb(206, 211, 220, 0.3)"
       }
       break;
     case 22:
@@ -271,8 +277,10 @@ function changeStyle(iconNumber) {
       body.style.backgroundImage = "linear-gradient(135deg, rgb(206, 211, 220) , rgb(252, 247, 248))";
       body.style.color = "rgb(48, 52, 63)";
       currentDescription.style.borderColor = "rgb(48, 52, 63)";
+      currentDescription.style.background = "rgb(48, 52, 63, 0.3)"
       for (let i = 0; i < dailyForecasts.length; i++) {
-        dailyForecasts[i].style.borderColor = "rgb(48, 52, 63)";        
+        dailyForecasts[i].style.borderColor = "rgb(48, 52, 63)";
+        dailyForecasts[i].style.background = "rgb(48, 52, 63, 0.3)";
       }
       break;
     case 33:
@@ -284,8 +292,10 @@ function changeStyle(iconNumber) {
       body.style.backgroundImage = "linear-gradient(135deg, rgb(73, 65, 109) , rgb(80, 90, 91))";
       body.style.color = "rgb(206, 211, 220)";
       currentDescription.style.borderColor = "rgb(206, 211, 220)";
+      currentDescription.style.background = "rgb(206, 211, 220, 0.3)"
       for (let i = 0; i < dailyForecasts.length; i++) {
-        dailyForecasts[i].style.borderColor = "rgb(206, 211, 220)";        
+        dailyForecasts[i].style.borderColor = "rgb(206, 211, 220)";
+        dailyForecasts[i].style.background = "rgb(206, 211, 220, 0.3)"        
       }
       break;
     case 39:
@@ -295,8 +305,10 @@ function changeStyle(iconNumber) {
       body.style.backgroundImage = "linear-gradient(135deg, rgb(73, 65, 109) , rgb(39, 52, 105))";
       body.style.color = "rgb(206, 211, 220)";
       currentDescription.style.borderColor = "rgb(206, 211, 220)";
+      currentDescription.style.background = "rgb(206, 211, 220, 0.3)"
       for (let i = 0; i < dailyForecasts.length; i++) {
-        dailyForecasts[i].style.borderColor = "rgb(206, 211, 220)";        
+        dailyForecasts[i].style.borderColor = "rgb(206, 211, 220)";
+        dailyForecasts[i].style.background = "rgb(206, 211, 220, 0.3)"
       }
       break;
     case 43:
@@ -304,8 +316,10 @@ function changeStyle(iconNumber) {
       body.style.backgroundImage = "linear-gradient(135deg, rgb(48, 52, 63) , rgb(206, 211, 220))";
       body.style.color = "rgb(206, 211, 220)";
       currentDescription.style.borderColor = "rgb(206, 211, 220)";
+      currentDescription.style.background = "rgb(206, 211, 220, 0.3)"
       for (let i = 0; i < dailyForecasts.length; i++) {
-        dailyForecasts[i].style.borderColor = "rgb(206, 211, 220)";        
+        dailyForecasts[i].style.borderColor = "rgb(206, 211, 220)";
+        dailyForecasts[i].style.background = "rgb(206, 211, 220, 0.3)"
       }
       break;
   }

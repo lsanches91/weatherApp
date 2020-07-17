@@ -47,8 +47,9 @@ h2 {
   justify-content: center;
   align-items: center;
   grid-template-rows: auto 1fr auto;
-  border: 4px solid rgb(206, 211, 220);
+  border: 4px solid transparent;
   border-radius: 10px;
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 #mainContainer {
@@ -142,10 +143,11 @@ h2 {
 }
 
 .dailyForecasts {
-  border: 4px solid rgb(206, 211, 220);
+  border: 4px solid transparent;
   border-radius: 10px;
   padding: 10px;
   margin: 10px 0 10px 0;
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 .forecastIcon {
