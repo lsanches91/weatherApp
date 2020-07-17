@@ -161,3 +161,10 @@ h2 {
   src: url('font/kenyan_coffee/kenyan-coffee-rg.ttf')
        format('truetype');
 }
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .container {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
